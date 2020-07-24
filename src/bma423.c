@@ -697,7 +697,6 @@ uint16_t bma423_init(struct bma4_dev *dev)
 	rslt = bma4_init(dev);
 
 	if (rslt == BMA4_OK) {
-		printf("BMA423_CHIP_ID:0x%x\n",dev->chip_id);
 		if (dev->chip_id == BMA423_CHIP_ID) {
 			/* Resolution of BMA423 sensor is 12 bit */
 			dev->resolution = 12;
